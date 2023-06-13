@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+
+/* FONTS */
+.card-title {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 0;
+    line-height: 1.1;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-subtitle {
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.email-form-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* BANNER WRAP SECTION */
+.banner-wrap {
+    background-image: url(./assets/KR-en-20230320-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 8px solid rgb(35 35 35);
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 60%;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0 45px;
+    padding-top: 45px;
+}
+
+.navbar > img {
+    height: 60px;
+}
+
+.navbar > a {
+    padding: 7px 17px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.banner-container {
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 512px;
+    padding-top: 136px;
+}
+
+.get-started-form {
+    height: 60px;
+    display: flex;
+}
+
+.get-started-form input {
+    height: 100%;
+    width: 450px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.get-started-form button { 
+    background-color: red;
+    color: white;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    min-height: 56px;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.info-container {
+    background: black;
+    color: white;
+    display: flex;
+    padding: 70px 45px;
+    border-bottom: 8px solid rgb(35 35 35);
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tv-container {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.tv-container img {
+    z-index: 1;
+}
+
+.tv-container video {
+position: absolute;
+}
+
+/* FOOTER STYLES */
+.footer {
+    background: black;
+    color: white;
+}
+
+.footer-items {
+     margin: 0 32px;
+     padding: 70px 45px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+.footer ul li, .questions-title {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links li {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.footer ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.questions-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-links {
+    list-style-type: none;
+    columns: 4;
+    padding: 0;
+}
+
+
+.language select {
+    height: 32px;
+    width: 100px;
+    font-size: 16px;
+    display: inline-block;
+    align-items: center;
+    text-align:center;
+    appearance: none;
+    background: black;
+    color: rgba(255, 255, 255, 0.7);    
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 1px 16px 0 20px;
+    margin-top: 30px;
+    border-radius: 3px;
+    background: url(./assets/baseline_arrow_drop_down_white_24dp.png) no-repeat 100%;
+}
+
+.material-icons {
+    font-size: 20px;
+    justify-content: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: 36px;
+    margin-left: 4px;
+    color: rgba(255, 255, 255, 0.7);
+}
